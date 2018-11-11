@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSKNibStretchyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavHeaderGreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="aMv-3S-oxx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a cool user" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRt-Jw-3vW">
+                    <rect key="frame" x="12" y="341.66666666666669" width="390" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="臺幣帳戶 $5,701,657" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-xy-EI5">
+                    <rect key="frame" x="112.66666666666667" y="366.33333333333331" width="188.66666666666663" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdP-QH-BkB">
+                    <rect key="frame" x="158.66666666666666" y="370.66666666666669" width="97" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                    <state key="normal" title="expansionMode">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapExpansionModeButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cg7-bM-zwI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QRt-Jw-3vW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="9jK-Rh-4It"/>
+                <constraint firstItem="aMv-3S-oxx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ajk-xV-IsJ"/>
+                <constraint firstAttribute="trailing" secondItem="aMv-3S-oxx" secondAttribute="trailing" id="GRk-T0-Wfr"/>
+                <constraint firstItem="cdP-QH-BkB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HMg-g0-6Ee"/>
+                <constraint firstItem="ePj-xy-EI5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OyO-rb-yam"/>
+                <constraint firstAttribute="trailing" secondItem="QRt-Jw-3vW" secondAttribute="trailing" constant="12" id="ZTG-zn-LtS"/>
+                <constraint firstItem="aMv-3S-oxx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fbC-ju-Dip"/>
+                <constraint firstItem="ePj-xy-EI5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="l1k-vK-38T"/>
+                <constraint firstItem="QRt-Jw-3vW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lVc-ld-GyT"/>
+                <constraint firstAttribute="bottom" secondItem="aMv-3S-oxx" secondAttribute="bottom" id="pv5-QU-awc"/>
+                <constraint firstItem="cdP-QH-BkB" firstAttribute="top" secondItem="QRt-Jw-3vW" secondAttribute="bottom" constant="8" id="rP2-kc-KVJ"/>
+                <constraint firstItem="QRt-Jw-3vW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-16" id="sno-dZ-YwI"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="maximumContentHeight">
+                    <real key="value" value="260"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="minimumContentHeight">
+                    <real key="value" value="64"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backgroundImageView" destination="aMv-3S-oxx" id="PYT-58-Obu"/>
+                <outlet property="expansionModeButton" destination="cdP-QH-BkB" id="I0K-dC-0Zs"/>
+                <outlet property="navigationTitleLabel" destination="ePj-xy-EI5" id="Txn-eh-S0d"/>
+                <outlet property="userNameLabel" destination="QRt-Jw-3vW" id="O20-AZ-exF"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="514"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NavHeaderGreenBG" width="876" height="454"/>
+    </resources>
+</document>

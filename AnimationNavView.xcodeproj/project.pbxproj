@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332DD31FD7138DEB0FEEB9C1 /* Pods_AnimationNavView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EE8EDAD2196AB3BA3A9F38 /* Pods_AnimationNavView.framework */; };
+		395299502198016100AEACAF /* GSKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994C2198016000AEACAF /* GSKCollectionViewCell.m */; };
+		395299512198016100AEACAF /* GSKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994F2198016100AEACAF /* GSKTableViewCell.m */; };
+		395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299542198017400AEACAF /* GSKExampleDataSource.m */; };
+		3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299572198018B00AEACAF /* GSKExampleTableViewController.m */; };
+		395299602198018D00AEACAF /* GSKExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */; };
+		395299612198018D00AEACAF /* UINavigationController+Transparency.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995C2198018C00AEACAF /* UINavigationController+Transparency.m */; };
+		395299622198018D00AEACAF /* GSKExampleBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */; };
+		3952997221980A1D00AEACAF /* GSKExampleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952996E21980A1C00AEACAF /* GSKExampleData.m */; };
+		3952997421980A1D00AEACAF /* GSKExampleDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952997021980A1D00AEACAF /* GSKExampleDataCell.m */; };
+		395299762198378500AEACAF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395299752198378500AEACAF /* UIKit.framework */; };
+		395299782198378D00AEACAF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395299772198378D00AEACAF /* CoreGraphics.framework */; };
+		3952997A2198379C00AEACAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395299792198379B00AEACAF /* Foundation.framework */; };
+		3952997E2198698200AEACAF /* ANVListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952997D2198698200AEACAF /* ANVListViewController.m */; };
 		39D5C2CA2197EFF200D0845D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C2C92197EFF200D0845D /* AppDelegate.m */; };
-		39D5C2CD2197EFF200D0845D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C2CC2197EFF200D0845D /* ViewController.m */; };
 		39D5C2D02197EFF200D0845D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C2CE2197EFF200D0845D /* Main.storyboard */; };
 		39D5C2D22197EFF300D0845D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C2D12197EFF300D0845D /* Assets.xcassets */; };
 		39D5C2D52197EFF300D0845D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D5C2D32197EFF300D0845D /* LaunchScreen.storyboard */; };
 		39D5C2D82197EFF300D0845D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C2D72197EFF300D0845D /* main.m */; };
 		39D5C2E22197EFF300D0845D /* AnimationNavViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C2E12197EFF300D0845D /* AnimationNavViewTests.m */; };
 		39D5C2ED2197EFF300D0845D /* AnimationNavViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D5C2EC2197EFF300D0845D /* AnimationNavViewUITests.m */; };
+		39F19ED1219800190008BE9E /* GSKNibStretchyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F19EC3219800180008BE9E /* GSKNibStretchyHeaderView.xib */; };
+		39F19ED4219800190008BE9E /* GSKNibStretchyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F19EC8219800190008BE9E /* GSKNibStretchyHeaderView.m */; };
+		39F19EDE219800500008BE9E /* UIView+GSKLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F19EDC219800500008BE9E /* UIView+GSKLayoutHelper.m */; };
+		AD694514838A0750291E0908 /* Pods_AnimationNavViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF531F6DD1717607FBA0F2D8 /* Pods_AnimationNavViewUITests.framework */; };
+		EAF16874908DA5B3B31E6CBD /* Pods_AnimationNavViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FD81C22CA0D9DF75AF615B /* Pods_AnimationNavViewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +53,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3952994C2198016000AEACAF /* GSKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKCollectionViewCell.m; sourceTree = "<group>"; };
+		3952994D2198016000AEACAF /* GSKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKCollectionViewCell.h; sourceTree = "<group>"; };
+		3952994E2198016000AEACAF /* GSKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKTableViewCell.h; sourceTree = "<group>"; };
+		3952994F2198016100AEACAF /* GSKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKTableViewCell.m; sourceTree = "<group>"; };
+		395299532198017400AEACAF /* GSKExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleDataSource.h; sourceTree = "<group>"; };
+		395299542198017400AEACAF /* GSKExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleDataSource.m; sourceTree = "<group>"; };
+		395299572198018B00AEACAF /* GSKExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleTableViewController.m; sourceTree = "<group>"; };
+		395299582198018B00AEACAF /* GSKExampleBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleBaseTableViewController.h; sourceTree = "<group>"; };
+		395299592198018C00AEACAF /* GSKExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleCollectionViewController.h; sourceTree = "<group>"; };
+		3952995A2198018C00AEACAF /* UINavigationController+Transparency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transparency.h"; sourceTree = "<group>"; };
+		3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleCollectionViewController.m; sourceTree = "<group>"; };
+		3952995C2198018C00AEACAF /* UINavigationController+Transparency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transparency.m"; sourceTree = "<group>"; };
+		3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleBaseTableViewController.m; sourceTree = "<group>"; };
+		3952995E2198018C00AEACAF /* GSKExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleTableViewController.h; sourceTree = "<group>"; };
+		395299642198026400AEACAF /* AnimationNavView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationNavView-Bridging-Header.h"; sourceTree = "<group>"; };
+		395299662198041600AEACAF /* AnimationNavView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationNavView-Prefix.pch"; sourceTree = "<group>"; };
+		395299672198078200AEACAF /* libGSKStretchyHeaderView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGSKStretchyHeaderView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3952996921980A1C00AEACAF /* ANVListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANVListViewController.h; sourceTree = "<group>"; };
+		3952996B21980A1C00AEACAF /* ANVListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANVListViewController.m; sourceTree = "<group>"; };
+		3952996C21980A1C00AEACAF /* GSKExampleDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleDataCell.h; sourceTree = "<group>"; };
+		3952996D21980A1C00AEACAF /* GSKExampleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleData.h; sourceTree = "<group>"; };
+		3952996E21980A1C00AEACAF /* GSKExampleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleData.m; sourceTree = "<group>"; };
+		3952997021980A1D00AEACAF /* GSKExampleDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleDataCell.m; sourceTree = "<group>"; };
+		395299752198378500AEACAF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		395299772198378D00AEACAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		395299792198379B00AEACAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3952997D2198698200AEACAF /* ANVListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANVListViewController.m; sourceTree = "<group>"; };
 		39D5C2C52197EFF200D0845D /* AnimationNavView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationNavView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5C2C82197EFF200D0845D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39D5C2C92197EFF200D0845D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		39D5C2CB2197EFF200D0845D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		39D5C2CC2197EFF200D0845D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		39D5C2CF2197EFF200D0845D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39D5C2D12197EFF300D0845D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39D5C2D42197EFF300D0845D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +94,20 @@
 		39D5C2E82197EFF300D0845D /* AnimationNavViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationNavViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D5C2EC2197EFF300D0845D /* AnimationNavViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationNavViewUITests.m; sourceTree = "<group>"; };
 		39D5C2EE2197EFF300D0845D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F19EC2219800180008BE9E /* GSKNibStretchyHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKNibStretchyHeaderView.h; sourceTree = "<group>"; };
+		39F19EC3219800180008BE9E /* GSKNibStretchyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSKNibStretchyHeaderView.xib; sourceTree = "<group>"; };
+		39F19EC8219800190008BE9E /* GSKNibStretchyHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKNibStretchyHeaderView.m; sourceTree = "<group>"; };
+		39F19EDC219800500008BE9E /* UIView+GSKLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GSKLayoutHelper.m"; sourceTree = "<group>"; };
+		39F19EDD219800500008BE9E /* UIView+GSKLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GSKLayoutHelper.h"; sourceTree = "<group>"; };
+		4438D08D1A8C3FE642BDE3EE /* Pods-AnimationNavViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavViewTests/Pods-AnimationNavViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BA33D949BBE88D4F618425F /* Pods-AnimationNavViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavViewTests/Pods-AnimationNavViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6060812AA50427DDFFA76584 /* Pods-AnimationNavView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavView/Pods-AnimationNavView.release.xcconfig"; sourceTree = "<group>"; };
+		662F4BB9AB62240000E23827 /* Pods-AnimationNavView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavView/Pods-AnimationNavView.debug.xcconfig"; sourceTree = "<group>"; };
+		79FD81C22CA0D9DF75AF615B /* Pods_AnimationNavViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationNavViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EE8EDAD2196AB3BA3A9F38 /* Pods_AnimationNavView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationNavView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF531F6DD1717607FBA0F2D8 /* Pods_AnimationNavViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationNavViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8B8EE04637BC5571E708D4 /* Pods-AnimationNavViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavViewUITests/Pods-AnimationNavViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F70FC5942F1DBE1B771A047F /* Pods-AnimationNavViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationNavViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationNavViewUITests/Pods-AnimationNavViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +115,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3952997A2198379C00AEACAF /* Foundation.framework in Frameworks */,
+				395299782198378D00AEACAF /* CoreGraphics.framework in Frameworks */,
+				395299762198378500AEACAF /* UIKit.framework in Frameworks */,
+				332DD31FD7138DEB0FEEB9C1 /* Pods_AnimationNavView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF16874908DA5B3B31E6CBD /* Pods_AnimationNavViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +134,140 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD694514838A0750291E0908 /* Pods_AnimationNavViewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390F721D219879400007D8CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3952994B2198014D00AEACAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3952994D2198016000AEACAF /* GSKCollectionViewCell.h */,
+				3952994C2198016000AEACAF /* GSKCollectionViewCell.m */,
+				3952994E2198016000AEACAF /* GSKTableViewCell.h */,
+				3952994F2198016100AEACAF /* GSKTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		395299522198016600AEACAF /* Data source */ = {
+			isa = PBXGroup;
+			children = (
+				395299532198017400AEACAF /* GSKExampleDataSource.h */,
+				395299542198017400AEACAF /* GSKExampleDataSource.m */,
+			);
+			name = "Data source";
+			sourceTree = "<group>";
+		};
+		395299562198017D00AEACAF /* Base view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				395299582198018B00AEACAF /* GSKExampleBaseTableViewController.h */,
+				3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */,
+				395299592198018C00AEACAF /* GSKExampleCollectionViewController.h */,
+				3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */,
+				3952995E2198018C00AEACAF /* GSKExampleTableViewController.h */,
+				395299572198018B00AEACAF /* GSKExampleTableViewController.m */,
+				3952995A2198018C00AEACAF /* UINavigationController+Transparency.h */,
+				3952995C2198018C00AEACAF /* UINavigationController+Transparency.m */,
+			);
+			name = "Base view controllers";
+			sourceTree = "<group>";
+		};
+		39529965219803AD00AEACAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395299642198026400AEACAF /* AnimationNavView-Bridging-Header.h */,
+				39D5C2D62197EFF300D0845D /* Info.plist */,
+				39D5C2D72197EFF300D0845D /* main.m */,
+				395299662198041600AEACAF /* AnimationNavView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3952997F21986A4F00AEACAF /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3952996B21980A1C00AEACAF /* ANVListViewController.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		395299852198713500AEACAF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				39F19EDB2198003E0008BE9E /* Helpers */,
+				39F19EDF219800EB0008BE9E /* View Controllers */,
+				39F19EBE2198000D0008BE9E /* Header Views */,
+				395299872198719B00AEACAF /* Shared */,
+				395299862198714400AEACAF /* Home */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		395299862198714400AEACAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3952996921980A1C00AEACAF /* ANVListViewController.h */,
+				3952997D2198698200AEACAF /* ANVListViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		395299872198719B00AEACAF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3952996C21980A1C00AEACAF /* GSKExampleDataCell.h */,
+				3952997021980A1D00AEACAF /* GSKExampleDataCell.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		39529988219871CC00AEACAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				39529989219871EB00AEACAF /* Models */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		39529989219871EB00AEACAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3952996D21980A1C00AEACAF /* GSKExampleData.h */,
+				3952996E21980A1C00AEACAF /* GSKExampleData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3952998A2198722900AEACAF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				39D5C2CE2197EFF200D0845D /* Main.storyboard */,
+				39D5C2D12197EFF300D0845D /* Assets.xcassets */,
+				39D5C2D32197EFF300D0845D /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		3952998B2198725900AEACAF /* Appication */ = {
+			isa = PBXGroup;
+			children = (
+				39D5C2C82197EFF200D0845D /* AppDelegate.h */,
+				39D5C2C92197EFF200D0845D /* AppDelegate.m */,
+			);
+			name = Appication;
+			sourceTree = "<group>";
+		};
 		39D5C2BC2197EFF200D0845D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +275,9 @@
 				39D5C2E02197EFF300D0845D /* AnimationNavViewTests */,
 				39D5C2EB2197EFF300D0845D /* AnimationNavViewUITests */,
 				39D5C2C62197EFF200D0845D /* Products */,
+				4BF76FC53B19B28DD35AD40D /* Pods */,
+				6D5E5FD091AB73F2EC05587B /* Frameworks */,
+				3952997F21986A4F00AEACAF /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +294,12 @@
 		39D5C2C72197EFF200D0845D /* AnimationNavView */ = {
 			isa = PBXGroup;
 			children = (
-				39D5C2C82197EFF200D0845D /* AppDelegate.h */,
-				39D5C2C92197EFF200D0845D /* AppDelegate.m */,
-				39D5C2CB2197EFF200D0845D /* ViewController.h */,
-				39D5C2CC2197EFF200D0845D /* ViewController.m */,
-				39D5C2CE2197EFF200D0845D /* Main.storyboard */,
-				39D5C2D12197EFF300D0845D /* Assets.xcassets */,
-				39D5C2D32197EFF300D0845D /* LaunchScreen.storyboard */,
-				39D5C2D62197EFF300D0845D /* Info.plist */,
-				39D5C2D72197EFF300D0845D /* main.m */,
+				390F721D219879400007D8CA /* Modules */,
+				3952998B2198725900AEACAF /* Appication */,
+				39529988219871CC00AEACAF /* Services */,
+				395299852198713500AEACAF /* UI */,
+				3952998A2198722900AEACAF /* Assets */,
+				39529965219803AD00AEACAF /* Supporting Files */,
 			);
 			path = AnimationNavView;
 			sourceTree = "<group>";
@@ -132,6 +322,62 @@
 			path = AnimationNavViewUITests;
 			sourceTree = "<group>";
 		};
+		39F19EBE2198000D0008BE9E /* Header Views */ = {
+			isa = PBXGroup;
+			children = (
+				39F19EC2219800180008BE9E /* GSKNibStretchyHeaderView.h */,
+				39F19EC8219800190008BE9E /* GSKNibStretchyHeaderView.m */,
+				39F19EC3219800180008BE9E /* GSKNibStretchyHeaderView.xib */,
+			);
+			name = "Header Views";
+			sourceTree = "<group>";
+		};
+		39F19EDB2198003E0008BE9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				39F19EDD219800500008BE9E /* UIView+GSKLayoutHelper.h */,
+				39F19EDC219800500008BE9E /* UIView+GSKLayoutHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		39F19EDF219800EB0008BE9E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				395299562198017D00AEACAF /* Base view controllers */,
+				395299522198016600AEACAF /* Data source */,
+				3952994B2198014D00AEACAF /* Cells */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4BF76FC53B19B28DD35AD40D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				662F4BB9AB62240000E23827 /* Pods-AnimationNavView.debug.xcconfig */,
+				6060812AA50427DDFFA76584 /* Pods-AnimationNavView.release.xcconfig */,
+				4BA33D949BBE88D4F618425F /* Pods-AnimationNavViewTests.debug.xcconfig */,
+				4438D08D1A8C3FE642BDE3EE /* Pods-AnimationNavViewTests.release.xcconfig */,
+				CE8B8EE04637BC5571E708D4 /* Pods-AnimationNavViewUITests.debug.xcconfig */,
+				F70FC5942F1DBE1B771A047F /* Pods-AnimationNavViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D5E5FD091AB73F2EC05587B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				395299792198379B00AEACAF /* Foundation.framework */,
+				395299772198378D00AEACAF /* CoreGraphics.framework */,
+				395299752198378500AEACAF /* UIKit.framework */,
+				395299672198078200AEACAF /* libGSKStretchyHeaderView.a */,
+				B3EE8EDAD2196AB3BA3A9F38 /* Pods_AnimationNavView.framework */,
+				79FD81C22CA0D9DF75AF615B /* Pods_AnimationNavViewTests.framework */,
+				BF531F6DD1717607FBA0F2D8 /* Pods_AnimationNavViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +385,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39D5C2F12197EFF300D0845D /* Build configuration list for PBXNativeTarget "AnimationNavView" */;
 			buildPhases = (
+				8093FEEBD4CFC5988AD9AB62 /* [CP] Check Pods Manifest.lock */,
 				39D5C2C12197EFF200D0845D /* Sources */,
 				39D5C2C22197EFF200D0845D /* Frameworks */,
 				39D5C2C32197EFF200D0845D /* Resources */,
+				0B05B0EEC3661860D7B9FC72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +404,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39D5C2F42197EFF300D0845D /* Build configuration list for PBXNativeTarget "AnimationNavViewTests" */;
 			buildPhases = (
+				F26CA92556C035DCADCFE977 /* [CP] Check Pods Manifest.lock */,
 				39D5C2D92197EFF300D0845D /* Sources */,
 				39D5C2DA2197EFF300D0845D /* Frameworks */,
 				39D5C2DB2197EFF300D0845D /* Resources */,
@@ -174,6 +423,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39D5C2F72197EFF300D0845D /* Build configuration list for PBXNativeTarget "AnimationNavViewUITests" */;
 			buildPhases = (
+				504CDF38E18C44209A9C6743 /* [CP] Check Pods Manifest.lock */,
 				39D5C2E42197EFF300D0845D /* Sources */,
 				39D5C2E52197EFF300D0845D /* Frameworks */,
 				39D5C2E62197EFF300D0845D /* Resources */,
@@ -199,6 +449,7 @@
 				TargetAttributes = {
 					39D5C2C42197EFF200D0845D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					39D5C2DC2197EFF300D0845D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -238,6 +489,7 @@
 				39D5C2D52197EFF300D0845D /* LaunchScreen.storyboard in Resources */,
 				39D5C2D22197EFF300D0845D /* Assets.xcassets in Resources */,
 				39D5C2D02197EFF200D0845D /* Main.storyboard in Resources */,
+				39F19ED1219800190008BE9E /* GSKNibStretchyHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +509,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B05B0EEC3661860D7B9FC72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AnimationNavView/Pods-AnimationNavView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimationNavView/Pods-AnimationNavView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		504CDF38E18C44209A9C6743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationNavViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8093FEEBD4CFC5988AD9AB62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationNavView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26CA92556C035DCADCFE977 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationNavViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39D5C2C12197EFF200D0845D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D5C2CD2197EFF200D0845D /* ViewController.m in Sources */,
+				395299612198018D00AEACAF /* UINavigationController+Transparency.m in Sources */,
+				395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */,
 				39D5C2D82197EFF300D0845D /* main.m in Sources */,
 				39D5C2CA2197EFF200D0845D /* AppDelegate.m in Sources */,
+				3952997E2198698200AEACAF /* ANVListViewController.m in Sources */,
+				3952997421980A1D00AEACAF /* GSKExampleDataCell.m in Sources */,
+				3952997221980A1D00AEACAF /* GSKExampleData.m in Sources */,
+				39F19ED4219800190008BE9E /* GSKNibStretchyHeaderView.m in Sources */,
+				395299512198016100AEACAF /* GSKTableViewCell.m in Sources */,
+				395299502198016100AEACAF /* GSKCollectionViewCell.m in Sources */,
+				3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */,
+				395299602198018D00AEACAF /* GSKExampleCollectionViewController.m in Sources */,
+				395299622198018D00AEACAF /* GSKExampleBaseTableViewController.m in Sources */,
+				39F19EDE219800500008BE9E /* UIView+GSKLayoutHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,46 +765,67 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		39D5C2F22197EFF300D0845D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662F4BB9AB62240000E23827 /* Pods-AnimationNavView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationNavView/AnimationNavView-Prefix.pch";
 				INFOPLIST_FILE = AnimationNavView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zx.AnimationNavView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationNavView/AnimationNavView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		39D5C2F32197EFF300D0845D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6060812AA50427DDFFA76584 /* Pods-AnimationNavView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnimationNavView/AnimationNavView-Prefix.pch";
 				INFOPLIST_FILE = AnimationNavView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zx.AnimationNavView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationNavView/AnimationNavView-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		39D5C2F52197EFF300D0845D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BA33D949BBE88D4F618425F /* Pods-AnimationNavViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +845,7 @@
 		};
 		39D5C2F62197EFF300D0845D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4438D08D1A8C3FE642BDE3EE /* Pods-AnimationNavViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +865,7 @@
 		};
 		39D5C2F82197EFF300D0845D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8B8EE04637BC5571E708D4 /* Pods-AnimationNavViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
@@ -521,6 +884,7 @@
 		};
 		39D5C2F92197EFF300D0845D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70FC5942F1DBE1B771A047F /* Pods-AnimationNavViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J73WV857ZD;
