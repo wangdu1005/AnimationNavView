@@ -12,6 +12,7 @@
 		390F722221995D230007D8CA /* ANVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390F722021995D230007D8CA /* ANVTableViewCell.xib */; };
 		390F7229219974580007D8CA /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F7228219974580007D8CA /* DataService.m */; };
 		390F722C219975660007D8CA /* AnimalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F722B219975660007D8CA /* AnimalModel.m */; };
+		390F722E21997D070007D8CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 390F722D21997D070007D8CA /* README.md */; };
 		395299512198016100AEACAF /* GSKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994F2198016100AEACAF /* GSKTableViewCell.m */; };
 		395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299542198017400AEACAF /* GSKExampleDataSource.m */; };
 		3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299572198018B00AEACAF /* GSKExampleTableViewController.m */; };
@@ -62,6 +63,7 @@
 		390F7228219974580007D8CA /* DataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		390F722A219975660007D8CA /* AnimalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalModel.h; sourceTree = "<group>"; };
 		390F722B219975660007D8CA /* AnimalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalModel.m; sourceTree = "<group>"; };
+		390F722D21997D070007D8CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3952994E2198016000AEACAF /* GSKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKTableViewCell.h; sourceTree = "<group>"; };
 		3952994F2198016100AEACAF /* GSKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKTableViewCell.m; sourceTree = "<group>"; };
 		395299532198017400AEACAF /* GSKExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleDataSource.h; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				39D5C2D62197EFF300D0845D /* Info.plist */,
 				39D5C2D72197EFF300D0845D /* main.m */,
 				395299662198041600AEACAF /* AnimationNavView-Prefix.pch */,
+				390F722D21997D070007D8CA /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390F722E21997D070007D8CA /* README.md in Resources */,
 				39D5C2D52197EFF300D0845D /* LaunchScreen.storyboard in Resources */,
 				39D5C2D22197EFF300D0845D /* Assets.xcassets in Resources */,
 				39D5C2D02197EFF200D0845D /* Main.storyboard in Resources */,
