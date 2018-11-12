@@ -1,6 +1,5 @@
 #import "GSKExampleDataSource.h"
 #import "GSKTableViewCell.h"
-#import "GSKCollectionViewCell.h"
 
 @interface GSKExampleDataSource ()
 @property (nonatomic, weak) UIScrollView *scrollView;
@@ -37,14 +36,6 @@
     [GSKTableViewCell registerIn:tableView];
 }
 
-- (void)registerForCollectionView:(UICollectionView *)collectionView {
-    collectionView.dataSource = self;
-    [GSKCollectionViewCell registerIn:collectionView];
-    [collectionView registerClass:[GSKAirbnbSectionTitleView class]
-       forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-              withReuseIdentifier:NSStringFromClass([GSKAirbnbSectionTitleView class])];
-}
-
 - (void)updateRowHeights {
     self.rowHeights = [NSMutableArray arrayWithCapacity:self.numberOfRowsInEverySection];
     for (NSUInteger i = 0; i < self.numberOfRowsInEverySection; ++i) {
@@ -71,35 +62,6 @@
     GSKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[GSKTableViewCell reuseIdentifier]];
     cell.contentView.backgroundColor = self.cellColors[indexPath.row % self.cellColors.count];
     return cell;
-}
-
-#pragma mark - collectionView
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return self.numberOfSections;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.rowHeights.count;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    GSKCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[GSKCollectionViewCell reuseIdentifier]
-                                                                            forIndexPath:indexPath];
-    cell.contentView.backgroundColor = self.cellColors[indexPath.item % self.cellColors.count];
-    return cell;
-}
-
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    if (!self.displaysSectionHeaders) {
-        return nil;
-    }
-    
-    GSKAirbnbSectionTitleView *titleView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                                              withReuseIdentifier:NSStringFromClass([GSKAirbnbSectionTitleView class])
-                                                                                     forIndexPath:indexPath];
-    titleView.label.text = [self titleForSection:indexPath.section];
-    return titleView;
 }
 
 #pragma mark - generic

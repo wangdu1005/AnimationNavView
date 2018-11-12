@@ -15,6 +15,5 @@
 @end
 
 @protocol GSKExampleDataCellDelegate
-- (void)exampleDataCellDidTapCollectionViewButton:(GSKExampleDataCell *)cell;
 - (void)exampleDataCellDidTapTableViewButton:(GSKExampleDataCell *)cell;
 @end

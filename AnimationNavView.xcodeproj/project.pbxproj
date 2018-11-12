@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		332DD31FD7138DEB0FEEB9C1 /* Pods_AnimationNavView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EE8EDAD2196AB3BA3A9F38 /* Pods_AnimationNavView.framework */; };
-		395299502198016100AEACAF /* GSKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994C2198016000AEACAF /* GSKCollectionViewCell.m */; };
 		395299512198016100AEACAF /* GSKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994F2198016100AEACAF /* GSKTableViewCell.m */; };
 		395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299542198017400AEACAF /* GSKExampleDataSource.m */; };
 		3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299572198018B00AEACAF /* GSKExampleTableViewController.m */; };
-		395299602198018D00AEACAF /* GSKExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */; };
 		395299612198018D00AEACAF /* UINavigationController+Transparency.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995C2198018C00AEACAF /* UINavigationController+Transparency.m */; };
 		395299622198018D00AEACAF /* GSKExampleBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */; };
 		3952997221980A1D00AEACAF /* GSKExampleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952996E21980A1C00AEACAF /* GSKExampleData.m */; };
@@ -53,17 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3952994C2198016000AEACAF /* GSKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKCollectionViewCell.m; sourceTree = "<group>"; };
-		3952994D2198016000AEACAF /* GSKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKCollectionViewCell.h; sourceTree = "<group>"; };
 		3952994E2198016000AEACAF /* GSKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKTableViewCell.h; sourceTree = "<group>"; };
 		3952994F2198016100AEACAF /* GSKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKTableViewCell.m; sourceTree = "<group>"; };
 		395299532198017400AEACAF /* GSKExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleDataSource.h; sourceTree = "<group>"; };
 		395299542198017400AEACAF /* GSKExampleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleDataSource.m; sourceTree = "<group>"; };
 		395299572198018B00AEACAF /* GSKExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleTableViewController.m; sourceTree = "<group>"; };
 		395299582198018B00AEACAF /* GSKExampleBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleBaseTableViewController.h; sourceTree = "<group>"; };
-		395299592198018C00AEACAF /* GSKExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleCollectionViewController.h; sourceTree = "<group>"; };
 		3952995A2198018C00AEACAF /* UINavigationController+Transparency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transparency.h"; sourceTree = "<group>"; };
-		3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleCollectionViewController.m; sourceTree = "<group>"; };
 		3952995C2198018C00AEACAF /* UINavigationController+Transparency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Transparency.m"; sourceTree = "<group>"; };
 		3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKExampleBaseTableViewController.m; sourceTree = "<group>"; };
 		3952995E2198018C00AEACAF /* GSKExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleTableViewController.h; sourceTree = "<group>"; };
@@ -151,8 +145,6 @@
 		3952994B2198014D00AEACAF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3952994D2198016000AEACAF /* GSKCollectionViewCell.h */,
-				3952994C2198016000AEACAF /* GSKCollectionViewCell.m */,
 				3952994E2198016000AEACAF /* GSKTableViewCell.h */,
 				3952994F2198016100AEACAF /* GSKTableViewCell.m */,
 			);
@@ -173,8 +165,6 @@
 			children = (
 				395299582198018B00AEACAF /* GSKExampleBaseTableViewController.h */,
 				3952995D2198018C00AEACAF /* GSKExampleBaseTableViewController.m */,
-				395299592198018C00AEACAF /* GSKExampleCollectionViewController.h */,
-				3952995B2198018C00AEACAF /* GSKExampleCollectionViewController.m */,
 				3952995E2198018C00AEACAF /* GSKExampleTableViewController.h */,
 				395299572198018B00AEACAF /* GSKExampleTableViewController.m */,
 				3952995A2198018C00AEACAF /* UINavigationController+Transparency.h */,
@@ -600,9 +590,7 @@
 				3952997221980A1D00AEACAF /* GSKExampleData.m in Sources */,
 				39F19ED4219800190008BE9E /* GSKNibStretchyHeaderView.m in Sources */,
 				395299512198016100AEACAF /* GSKTableViewCell.m in Sources */,
-				395299502198016100AEACAF /* GSKCollectionViewCell.m in Sources */,
 				3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */,
-				395299602198018D00AEACAF /* GSKExampleCollectionViewController.m in Sources */,
 				395299622198018D00AEACAF /* GSKExampleBaseTableViewController.m in Sources */,
 				39F19EDE219800500008BE9E /* UIView+GSKLayoutHelper.m in Sources */,
 			);

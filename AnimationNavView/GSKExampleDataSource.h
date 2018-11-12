@@ -2,8 +2,7 @@
 
 static const NSUInteger kDefaultNumberOfRows = 100;
 
-@interface GSKExampleDataSource : NSObject<UITableViewDataSource,
-                                           UICollectionViewDataSource>
+@interface GSKExampleDataSource : NSObject<UITableViewDataSource>
 
 // set to true to display basic titles: "Section #X"
 @property (nonatomic) BOOL displaysSectionHeaders; // default value: false
@@ -13,7 +12,6 @@ static const NSUInteger kDefaultNumberOfRows = 100;
 
 - (instancetype)init;
 - (void)registerForTableView:(UITableView *)tableView;
-- (void)registerForCollectionView:(UICollectionView *)collectionView;
 - (CGFloat)heightForItemAtIndexPath:(NSIndexPath *)indexPath;
 - (NSString *)titleForSection:(NSInteger)section;
 

@@ -11,7 +11,6 @@
 
 #import "UINavigationController+Transparency.h"
 #import "GSKExampleTableViewController.h"
-#import "GSKExampleCollectionViewController.h"
 
 @interface ANVListViewController () <GSKExampleDataCellDelegate>
 @property (nonatomic) NSArray *exampleDatas;
@@ -61,11 +60,6 @@
 }
 
 #pragma mark - GSKExampleDataCellDelegate
-
-- (void)exampleDataCellDidTapCollectionViewButton:(GSKExampleDataCell *)cell {
-    GSKExampleCollectionViewController *viewController = [[GSKExampleCollectionViewController alloc] initWithData:cell.data];
-    [self.navigationController pushViewController:viewController animated:YES];
-}
 
 - (void)exampleDataCellDidTapTableViewButton:(GSKExampleDataCell *)cell {
     GSKExampleTableViewController *viewController = [[GSKExampleTableViewController alloc] initWithData:cell.data];
