@@ -5,38 +5,47 @@ static const BOOL kNavBar = YES;
 
 @interface GSKNibStretchyHeaderView ()
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
-@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userAssetsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *navigationTitleLabel;
-@property (weak, nonatomic) IBOutlet UIButton *expansionModeButton;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundBottomImageView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *accountSwitchSegmented;
 @end
 
 @implementation GSKNibStretchyHeaderView
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.contentView.backgroundColor = [UIColor colorWithWhite:0.2 alpha:1];
+
+    UIColor *bgColor = [UIColor colorWithRed:113.0f/255.0f
+                                       green:210.0f/255.0f
+                                        blue:105.0f/255.0f
+                                       alpha:1.0f];
+    self.contentView.backgroundColor = bgColor;
     self.expansionMode = GSKStretchyHeaderViewExpansionModeImmediate;
     if (kNavBar) {
-        self.minimumContentHeight = 64;
+        self.minimumContentHeight = 80;
     } else {
         self.navigationTitleLabel.hidden = YES;
     }
-    
-    self.expansionModeButton.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.expansionModeButton.layer.borderWidth = 2;
-    self.expansionModeButton.layer.cornerRadius = 4;
-    [self updateExpansionModeButtonTitle];
 }
 
 - (void)didChangeStretchFactor:(CGFloat)stretchFactor {
-    CGFloat alpha = CGFloatTranslateRange(stretchFactor, 0.2, 0.8, 0, 1);
-    alpha = MAX(0, MIN(1, alpha));
 
-    self.userNameLabel.alpha = alpha;
-    self.expansionModeButton.alpha = alpha;
+    CGFloat alpha = CGFloatTranslateRange(stretchFactor, 0.3, 0.6, 0, 1);
+    alpha = MAX(0, MIN(1, alpha));
+    
+    NSLog(@"stretchFactor: %.2f", stretchFactor);
+    
+    CGFloat alpha2 = CGFloatTranslateRange(stretchFactor, 0.3, 1, 0, 1);
+    alpha2 = MAX(0, MIN(1, alpha2));
+    
+    NSLog(@"alpha2: %.2f", alpha2);
+
+    self.userAssetsLabel.alpha = alpha;
+    self.accountSwitchSegmented.alpha = alpha2;
 
     if (kNavBar) {
-//        self.backgroundImageView.alpha = alpha;
+        self.backgroundImageView.alpha = alpha;
 
         CGFloat navTitleFactor = 0.4;
         CGFloat navTitleAlpha = 0;
@@ -49,33 +58,5 @@ static const BOOL kNavBar = YES;
     }
 }
 
-- (void)updateExpansionModeButtonTitle {
-    switch (self.expansionMode) {
-        case GSKStretchyHeaderViewExpansionModeTopOnly: {
-            [self.expansionModeButton setTitle:@"Expansion: top"
-                                      forState:UIControlStateNormal];
-            break;
-        }
-        case GSKStretchyHeaderViewExpansionModeImmediate: {
-            [self.expansionModeButton setTitle:@"Expansion: immediate"
-                                      forState:UIControlStateNormal];
-            break;
-        }
-    }
-}
-
-- (IBAction)didTapExpansionModeButton:(id)sender {
-    switch (self.expansionMode) {
-        case GSKStretchyHeaderViewExpansionModeTopOnly: {
-            self.expansionMode = GSKStretchyHeaderViewExpansionModeImmediate;
-            break;
-        }
-        case GSKStretchyHeaderViewExpansionModeImmediate: {
-            self.expansionMode = GSKStretchyHeaderViewExpansionModeTopOnly;
-            break;
-        }
-    }
-    [self updateExpansionModeButtonTitle];
-}
 
 @end
