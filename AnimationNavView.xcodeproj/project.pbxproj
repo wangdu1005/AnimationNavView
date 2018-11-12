@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		332DD31FD7138DEB0FEEB9C1 /* Pods_AnimationNavView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EE8EDAD2196AB3BA3A9F38 /* Pods_AnimationNavView.framework */; };
+		390F722121995D230007D8CA /* ANVTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F721F21995D230007D8CA /* ANVTableViewCell.m */; };
+		390F722221995D230007D8CA /* ANVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390F722021995D230007D8CA /* ANVTableViewCell.xib */; };
+		390F7229219974580007D8CA /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F7228219974580007D8CA /* DataService.m */; };
+		390F722C219975660007D8CA /* AnimalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 390F722B219975660007D8CA /* AnimalModel.m */; };
 		395299512198016100AEACAF /* GSKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3952994F2198016100AEACAF /* GSKTableViewCell.m */; };
 		395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299542198017400AEACAF /* GSKExampleDataSource.m */; };
 		3952995F2198018D00AEACAF /* GSKExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395299572198018B00AEACAF /* GSKExampleTableViewController.m */; };
@@ -51,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390F721E21995D230007D8CA /* ANVTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANVTableViewCell.h; sourceTree = "<group>"; };
+		390F721F21995D230007D8CA /* ANVTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANVTableViewCell.m; sourceTree = "<group>"; };
+		390F722021995D230007D8CA /* ANVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ANVTableViewCell.xib; sourceTree = "<group>"; };
+		390F7227219974580007D8CA /* DataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		390F7228219974580007D8CA /* DataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		390F722A219975660007D8CA /* AnimalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalModel.h; sourceTree = "<group>"; };
+		390F722B219975660007D8CA /* AnimalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimalModel.m; sourceTree = "<group>"; };
 		3952994E2198016000AEACAF /* GSKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKTableViewCell.h; sourceTree = "<group>"; };
 		3952994F2198016100AEACAF /* GSKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSKTableViewCell.m; sourceTree = "<group>"; };
 		395299532198017400AEACAF /* GSKExampleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSKExampleDataSource.h; sourceTree = "<group>"; };
@@ -142,11 +153,23 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		390F72232199734E0007D8CA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				390F7227219974580007D8CA /* DataService.h */,
+				390F7228219974580007D8CA /* DataService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		3952994B2198014D00AEACAF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				3952994E2198016000AEACAF /* GSKTableViewCell.h */,
 				3952994F2198016100AEACAF /* GSKTableViewCell.m */,
+				390F721E21995D230007D8CA /* ANVTableViewCell.h */,
+				390F721F21995D230007D8CA /* ANVTableViewCell.m */,
+				390F722021995D230007D8CA /* ANVTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -225,6 +248,7 @@
 		39529988219871CC00AEACAF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				390F72232199734E0007D8CA /* Service */,
 				39529989219871EB00AEACAF /* Models */,
 			);
 			name = Services;
@@ -235,6 +259,8 @@
 			children = (
 				3952996D21980A1C00AEACAF /* GSKExampleData.h */,
 				3952996E21980A1C00AEACAF /* GSKExampleData.m */,
+				390F722A219975660007D8CA /* AnimalModel.h */,
+				390F722B219975660007D8CA /* AnimalModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -479,6 +505,7 @@
 				39D5C2D52197EFF300D0845D /* LaunchScreen.storyboard in Resources */,
 				39D5C2D22197EFF300D0845D /* Assets.xcassets in Resources */,
 				39D5C2D02197EFF200D0845D /* Main.storyboard in Resources */,
+				390F722221995D230007D8CA /* ANVTableViewCell.xib in Resources */,
 				39F19ED1219800190008BE9E /* GSKNibStretchyHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,11 +534,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AnimationNavView/Pods-AnimationNavView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
@@ -582,10 +611,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				395299612198018D00AEACAF /* UINavigationController+Transparency.m in Sources */,
+				390F7229219974580007D8CA /* DataService.m in Sources */,
 				395299552198017400AEACAF /* GSKExampleDataSource.m in Sources */,
 				39D5C2D82197EFF300D0845D /* main.m in Sources */,
+				390F722121995D230007D8CA /* ANVTableViewCell.m in Sources */,
 				39D5C2CA2197EFF200D0845D /* AppDelegate.m in Sources */,
 				3952997E2198698200AEACAF /* ANVListViewController.m in Sources */,
+				390F722C219975660007D8CA /* AnimalModel.m in Sources */,
 				3952997421980A1D00AEACAF /* GSKExampleDataCell.m in Sources */,
 				3952997221980A1D00AEACAF /* GSKExampleData.m in Sources */,
 				39F19ED4219800190008BE9E /* GSKNibStretchyHeaderView.m in Sources */,

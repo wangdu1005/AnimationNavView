@@ -1,5 +1,6 @@
 #import "GSKExampleBaseTableViewController.h"
 #import "UINavigationController+Transparency.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface GSKExampleBaseTableViewController ()
 
@@ -36,6 +37,23 @@
 
     _dataSource = [self loadDataSource];
     [self.dataSource registerForTableView:self.tableView];
+    
+    // GET
+    NSURL *URL                      = [NSURL URLWithString:@"https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=a3e2b221-75e0-45c1-8f97-75acbd43d613&limit=10&offset=0"];
+    AFHTTPSessionManager *manager   = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
+
+    [manager    GET:URL.absoluteString
+         parameters:nil
+           progress:nil
+            success:^(NSURLSessionTask *task, id responseObject) {
+                NSDictionary *response = responseObject;
+                NSLog(@"api response: %@", response);
+            }
+            failure:^(NSURLSessionTask *operation, NSError *error) {
+                NSLog(@"Error: %@", error);
+            }
+     ];
 }
 
 - (NSString *)defaultTitle {

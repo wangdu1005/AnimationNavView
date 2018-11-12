@@ -8,6 +8,7 @@ target 'AnimationNavView' do
   # Pods for AnimationNavView
   pod 'GSKStretchyHeaderView'
   pod 'Masonry'
+  pod 'AFNetworking', '~> 3.0'
 
   target 'AnimationNavViewTests' do
     inherit! :search_paths

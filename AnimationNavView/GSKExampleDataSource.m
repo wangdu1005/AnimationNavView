@@ -1,13 +1,9 @@
 #import "GSKExampleDataSource.h"
-#import "GSKTableViewCell.h"
+#import "ANVTableViewCell.h"
 
 @interface GSKExampleDataSource ()
 @property (nonatomic, weak) UIScrollView *scrollView;
 @property (nonatomic) NSMutableArray<NSNumber *> *rowHeights;
-@end
-
-@interface GSKAirbnbSectionTitleView: UICollectionReusableView
-@property (nonatomic) UILabel *label;
 @end
 
 @implementation GSKExampleDataSource
@@ -33,7 +29,9 @@
     _scrollView = tableView;
     
     tableView.dataSource = self;
-    [GSKTableViewCell registerIn:tableView];
+//    [GSKTableViewCell registerIn:tableView];
+//    UINib *cellNib = [UINib nibWithNibName:@"ANVTableViewCell" bundle:nil];
+//    [tableView registerNib:cellNib forCellReuseIdentifier:@"Cell"];
 }
 
 - (void)updateRowHeights {
@@ -59,36 +57,30 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    GSKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[GSKTableViewCell reuseIdentifier]];
-    cell.contentView.backgroundColor = self.cellColors[indexPath.row % self.cellColors.count];
+
+    ANVTableViewCell *cell = (ANVTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"ANVTableViewCell" owner:self options:nil];
+    if(cell == nil) {
+        cell = nibs[0];
+    }
+
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    cell.nameLabel.text = @"Hello world";
+    cell.locationLabel.text = @"homehomehome";
+    cell.textViewHightConstraint.constant = 500;
+    
     return cell;
 }
 
 #pragma mark - generic
 
 - (CGFloat)heightForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.rowHeights[indexPath.item] floatValue];
+//    return [self.rowHeights[indexPath.item] floatValue];
+    return 500;
 }
 
 - (NSString *)titleForSection:(NSInteger)section {
     return self.displaysSectionHeaders ? [NSString stringWithFormat:@"Section #%@", @(section)] : nil;
-}
-
-@end
-
-
-@implementation GSKAirbnbSectionTitleView
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.label = [[UILabel alloc] initWithFrame:self.bounds];
-        self.label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        [self addSubview:self.label];
-        
-        self.backgroundColor = [UIColor grayColor];
-    }
-    return self;
 }
 
 @end

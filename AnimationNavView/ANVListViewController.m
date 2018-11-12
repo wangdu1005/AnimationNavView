@@ -29,7 +29,6 @@
     GSKExampleData *nib = [GSKExampleData dataWithTitle:@"From a XIB"
                                       headerViewNibName:@"GSKNibStretchyHeaderView"];
     
-    // Not working
     nib.headerViewInitialHeight = 200;
     
     self.exampleDatas = @[nib];
