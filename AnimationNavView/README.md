@@ -1,7 +1,7 @@
 ## 國泰UI動物園作業實作
 #### 林子勛 2018/11/12
 
-[Github: AnimationNavView](https://github.com/wangdu1005/AnimationNavView)
+[Github: AnimationNavView](https://github.com/wangdu1005/AnimationNavView/tree/develop/AnimationNavView)
 
 ### 本次作業，重點著重在UI畫面的完整呈現：盡量完整還原國泰優惠app在帳戶畫面NavHeader各元件的互動
 
